@@ -9,4 +9,8 @@ public class AggressiveDriver extends Driver {
         return false;
     }
 
+    @Override
+    public double throttle_action(Car car, Environment env) {
+        return 0;
+    }
 }

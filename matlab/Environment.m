@@ -14,6 +14,10 @@ classdef Environment < handle
         	x = inf;
         end
         
+        % Added function env = add_car(env,car)
+        function env = add_car(env, car)
+            env.cars = [env.cars, car];
+        end
     end
 
 end
