@@ -6,8 +6,8 @@ close all
 dist = makedist('Exponential', 'mu', 100);
 
 % ii. What is the formula for the probability density function of this distribution?
-
-%See Lecture Slides 7
+%     f(x) = { lambda exp(-lambda * x)     ; x >= 0  lamba = 1/100
+%            { 0                          ; x <  0 
 
 % iii. Use Matlab to find its mean, median, interquartile range, variance, and standard deviation.
 
@@ -61,5 +61,4 @@ histfit(sample_mean_10, 10, 'inversegaussian');
 histfit(sample_mean_1000, 10, 'inversegaussian');
 
 % ix. How does this result relate to the Central Limit Theorem?
-
-% Need to refer to Lecture Slides 6
+% It is taking the shape but needs a higher n to properly follow CLT
